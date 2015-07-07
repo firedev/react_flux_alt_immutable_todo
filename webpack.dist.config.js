@@ -18,7 +18,7 @@ module.exports = {
 
   debug: false,
   devtool: false,
-  entry: './src/components/MyNewProjectApp.js',
+  entry: './src/TodoList.js',
 
   stats: {
     colors: true,
@@ -38,7 +38,9 @@ module.exports = {
     alias: {
       'styles': __dirname + '/src/styles',
       'mixins': __dirname + '/src/mixins',
-      'components': __dirname + '/src/components/'
+      'components': __dirname + '/src/components/',
+      'stores': __dirname + '/src/stores/',
+      'actions': __dirname + '/src/actions/'
     }
   },
 
