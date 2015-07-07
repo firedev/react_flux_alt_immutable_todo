@@ -19,7 +19,7 @@ module.exports = {
   devtool: 'sourcemap',
   entry: [
       'webpack/hot/only-dev-server',
-      './src/components/MyNewProjectApp.js'
+      './src/components/ReactImmutableAltTodoApp.js'
   ],
 
   stats: {
@@ -52,7 +52,7 @@ module.exports = {
       test: /\.css$/,
       loader: 'style-loader!css-loader'
     }, {
-      test: /\.(png|jpg|woff|woff2)$/,
+      test: /\.(png|jpg|eot|ttf|svg|woff|woff2)$/,
       loader: 'url-loader?limit=8192'
     }]
   },
