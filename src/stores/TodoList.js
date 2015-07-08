@@ -5,7 +5,7 @@ import Alt from 'lib/Alt';
 import Actions from 'actions/TodoList';
 
 class TodoListStore {
-  construction() {
+  constructor() {
     let { addTask, removeTask } = Actions;
 
     this.bindListeners({
@@ -13,7 +13,7 @@ class TodoListStore {
       remove: removeTask
     });
 
-    this.state = List();
+    this.state = new List();
   }
 
   add(task) {
@@ -23,9 +23,9 @@ class TodoListStore {
   remove(taskID) {
     let taskIndex = this.state.findIndex((task) => task.get('id') === taskID);
 
-    return taskIndex !==(-1) ? this.setState(this.state.delete(taskIndex)) :
+    return taskIndex !== (-1) ? this.setState(this.state.delete(taskIndex)) :
                                this.state;
   }
 }
 
-export default AltInstance.createStore(ImmutableStore(TodoListStore));
+export default Alt.createStore(new ImmutableStore(TodoListStore));

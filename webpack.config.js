@@ -35,7 +35,7 @@ module.exports = {
       'components': __dirname + '/src/components/',
       'stores': __dirname + '/src/stores/',
       'actions': __dirname + '/src/actions/',
-      'lib': __dirname + '/lib/'
+      'lib': __dirname + '/src/lib/'
     }
   },
   module: {

@@ -1,6 +1,6 @@
 import UUID from 'node-uuid';
 import Immutable from 'immutable';
-import Alt from 'lib/Alt';
+import Alt from '../lib/Alt';
 
 class TodoListActions {
   addTask(content) {
@@ -12,4 +12,4 @@ class TodoListActions {
   }
 }
 
-export default AltInstance.createActions(TodoListActions);
+export default Alt.createActions(TodoListActions);
