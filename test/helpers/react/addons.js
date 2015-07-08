@@ -570,7 +570,6 @@ function handleEventsForChangeEventIE8(
   }
 }
 
-
 /**
  * SECTION: handle `input` event
  */
@@ -716,7 +715,6 @@ function getTargetIDForInputEventIE(
     }
   }
 }
-
 
 /**
  * SECTION: handle `click` event
@@ -3000,7 +2998,6 @@ function accumulateTwoPhaseDispatchesSingle(event) {
   }
 }
 
-
 /**
  * Accumulates without regard to direction, does not look for phased
  * registration names. Same as `accumulateDirectDispatchesSingle` but without
@@ -3048,15 +3045,12 @@ function accumulateEnterLeaveDispatches(leave, enter, fromID, toID) {
   );
 }
 
-
 function accumulateDirectDispatches(events) {
   if ("production" !== "development") {
     injection.validate();
   }
   forEachAccumulated(events, accumulateDirectDispatchesSingle);
 }
-
-
 
 /**
  * A small set of propagation patterns, each of which will accept a small amount
@@ -4184,10 +4178,8 @@ var getReactRootElementInContainer = require("./getReactRootElementInContainer")
 var invariant = require("./invariant");
 var mutateHTMLNodeWithMarkup = require("./mutateHTMLNodeWithMarkup");
 
-
 var ELEMENT_NODE_TYPE = 1;
 var DOC_NODE_TYPE = 9;
-
 
 /**
  * Abstracts away all functionality of `ReactComponent` requires knowledge of
@@ -4503,8 +4495,6 @@ var ReactCompositeComponentInterface = {
    */
   render: SpecPolicy.DEFINE_ONCE,
 
-
-
   // ==== Delegate methods ====
 
   /**
@@ -4614,8 +4604,6 @@ var ReactCompositeComponentInterface = {
    * @optional
    */
   componentWillUnmount: SpecPolicy.DEFINE_MANY,
-
-
 
   // ==== Advanced methods ====
 
@@ -8266,7 +8254,6 @@ var ReactEventEmitter = merge(ReactEventEmitterMixin, {
 
 });
 
-
 module.exports = ReactEventEmitter;
 
 },{"./EventConstants":15,"./EventListener":16,"./EventPluginHub":17,"./ExecutionEnvironment":21,"./ReactEventEmitterMixin":49,"./ViewportMetrics":88,"./invariant":113,"./isEventSupported":114,"./merge":122}],49:[function(require,module,exports){
@@ -9646,7 +9633,6 @@ var ReactMount = {
       ReactMount.getID(ancestorNode)
     ) : invariant(false));
   },
-
 
   /**
    * React ID utilities.
@@ -11043,7 +11029,6 @@ var Mixin = {
   }
 };
 
-
 mixInto(ReactReconcileTransaction, Transaction.Mixin);
 mixInto(ReactReconcileTransaction, Mixin);
 
@@ -11364,7 +11349,6 @@ var ReactTestUtils = {
     return all[0];
   },
 
-
   /**
    * Finds all instance of components in the rendered tree that are DOM
    * components with the tag name matching `tagName`.
@@ -11390,7 +11374,6 @@ var ReactTestUtils = {
     }
     return all[0];
   },
-
 
   /**
    * Finds all instances of components with type equal to `componentType`.
@@ -12293,7 +12276,6 @@ React.addons = {
 
 module.exports = React;
 
-
 },{"./LinkedStateMixin":22,"./React":26,"./ReactTestUtils":68,"./ReactTransitionGroup":71,"./cx":96}],76:[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
@@ -12926,7 +12908,6 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
 
-
 },{"./SyntheticEvent":80}],79:[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
@@ -12978,7 +12959,6 @@ SyntheticEvent.augmentClass(
 );
 
 module.exports = SyntheticCompositionEvent;
-
 
 },{"./SyntheticEvent":80}],80:[function(require,module,exports){
 /**
@@ -14749,7 +14729,6 @@ function getActiveElement() /*?DOMElement*/ {
 
 module.exports = getActiveElement;
 
-
 },{}],106:[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
@@ -14894,7 +14873,6 @@ function getMarkupWrap(nodeName) {
   }
   return shouldWrap[nodeName] ? markupWrap[nodeName] : null;
 }
-
 
 module.exports = getMarkupWrap;
 
@@ -15543,7 +15521,6 @@ var keyOf = function(oneKeyObj) {
   }
   return null;
 };
-
 
 module.exports = keyOf;
 

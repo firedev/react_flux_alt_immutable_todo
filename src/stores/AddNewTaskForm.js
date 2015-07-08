@@ -15,15 +15,18 @@ class AddNewTaskFormStore {
     let validationError = this.validate(newContent),
     submittable = validationError.length === 0;
 
-    this.setState({ validationError,
+    this.setState({
+      validationError,
       content: newContent,
       submittable });
   }
 
   clearForm() {
-    this.setState({ validationError: '',
+    this.setState({
+      validationError: '',
       content: '',
-      submittable: false });
+      submittable: false
+    });
   }
 
   validate(newContent) {
