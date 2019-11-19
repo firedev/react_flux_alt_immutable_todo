@@ -21,7 +21,7 @@
     "babel": "^5.0.0",
     "babel-loader": "^5.0.0",
     "css-loader": "~0.9.0",
-    "eslint": "^0.21.2",
+    "eslint": "^6.6.0",
     "eslint-loader": "^0.11.2",
     "eslint-plugin-react": "^2.4.0",
     "grunt": "~0.4.5",
