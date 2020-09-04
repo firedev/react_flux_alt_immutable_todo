@@ -14,7 +14,7 @@
     "bootstrap": "node_modules/bootstrap",
     "immutable": "^3.7.4",
     "normalize.css": "~3.0.3",
-    "react": "0.13.x",
+    "react": "16.13.x",
     "react-bootstrap": "^0.23.7"
   },
   "devDependencies": {
